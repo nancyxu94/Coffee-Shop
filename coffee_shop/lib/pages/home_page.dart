@@ -55,10 +55,10 @@ class _HomePageState extends State<HomePage>
         backgroundColor: Colors.transparent,
         leading: Icon(Icons.menu),
         actions:
-        [
+        const [
           Padding
           (
-            padding: const EdgeInsets.only(right: 20.0),
+            padding: EdgeInsets.only(right: 20.0),
             child: Icon(Icons.person),
           ),
         ],
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage>
       bottomNavigationBar: BottomNavigationBar
       (
         items:
-        [
+        const [
           BottomNavigationBarItem
           (
             icon: Icon(Icons.home),
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage>
           SizedBox(height: 5),
 
           //Horizontal listview of coffee types
-          Container
+          SizedBox
           (
             height:50,
             child: ListView.builder
